@@ -13,6 +13,9 @@
 		FB0F16461E14C2D700549351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0F16441E14C2D700549351 /* Main.storyboard */; };
 		FB0F16481E14C2D700549351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0F16471E14C2D700549351 /* Assets.xcassets */; };
 		FB0F164B1E14C2D700549351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0F16491E14C2D700549351 /* LaunchScreen.storyboard */; };
+		FB0F165B1E14C32100549351 /* BubbleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F16561E14C32100549351 /* BubbleTextView.m */; };
+		FB0F165C1E14C32100549351 /* DynamicBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F16581E14C32100549351 /* DynamicBubble.m */; };
+		FB0F165D1E14C32100549351 /* MoveableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0F165A1E14C32100549351 /* MoveableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FB0F16471E14C2D700549351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB0F164A1E14C2D700549351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB0F164C1E14C2D700549351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0F16551E14C32100549351 /* BubbleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleTextView.h; sourceTree = "<group>"; };
+		FB0F16561E14C32100549351 /* BubbleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleTextView.m; sourceTree = "<group>"; };
+		FB0F16571E14C32100549351 /* DynamicBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBubble.h; sourceTree = "<group>"; };
+		FB0F16581E14C32100549351 /* DynamicBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicBubble.m; sourceTree = "<group>"; };
+		FB0F16591E14C32100549351 /* MoveableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveableView.h; sourceTree = "<group>"; };
+		FB0F165A1E14C32100549351 /* MoveableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		FB0F163A1E14C2D700549351 /* BubbleSpeechView */ = {
 			isa = PBXGroup;
 			children = (
+				FB0F16541E14C32100549351 /* BubbleControl */,
 				FB0F163E1E14C2D700549351 /* AppDelegate.h */,
 				FB0F163F1E14C2D700549351 /* AppDelegate.m */,
 				FB0F16411E14C2D700549351 /* ViewController.h */,
@@ -77,6 +87,19 @@
 				FB0F163C1E14C2D700549351 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB0F16541E14C32100549351 /* BubbleControl */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F16551E14C32100549351 /* BubbleTextView.h */,
+				FB0F16561E14C32100549351 /* BubbleTextView.m */,
+				FB0F16571E14C32100549351 /* DynamicBubble.h */,
+				FB0F16581E14C32100549351 /* DynamicBubble.m */,
+				FB0F16591E14C32100549351 /* MoveableView.h */,
+				FB0F165A1E14C32100549351 /* MoveableView.m */,
+			);
+			path = BubbleControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0F165C1E14C32100549351 /* DynamicBubble.m in Sources */,
+				FB0F165D1E14C32100549351 /* MoveableView.m in Sources */,
 				FB0F16431E14C2D700549351 /* ViewController.m in Sources */,
 				FB0F16401E14C2D700549351 /* AppDelegate.m in Sources */,
 				FB0F163D1E14C2D700549351 /* main.m in Sources */,
+				FB0F165B1E14C32100549351 /* BubbleTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
